@@ -1,6 +1,6 @@
 const http = require('http'),
   fs = require('fs'),
-  url = reuqire('url');
+  url = require('url');
 
 http.createServer((request, response) => {
   let addr = request.url,
@@ -32,6 +32,5 @@ http.createServer((request, response) => {
 
   });
 
-
-  }).listen(8080);
-  console.log('My test server is running on Port 8080');
+}).listen(8080);
+console.log('My test server is running on Port 8080.');
