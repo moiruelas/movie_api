@@ -1,0 +1,64 @@
+{
+  "movies": [
+    {
+      "title": "Inception",
+      "director": "Christopher Nolan",
+      "year": 2010,
+      "genre": "Sci-Fi"
+    },
+    {
+      "title": "The Lion King",
+      "director": "Rob Minkoff, Roger Allers",
+      "year": 1994,
+      "genre": "Animated"
+    },
+    {
+      "title": "Interstellar",
+      "director": "Christopher Nolan",
+      "year": 2014,
+      "genre": "Sci-Fi"
+    },
+    {
+      "title": "Black Panther",
+      "director": "Ryan Coogler",
+      "year": 2018,
+      "genre": "Action"
+    },
+    {
+      "title": "Spider-Man",
+      "director": "Sam Raimi",
+      "year": 2002,
+      "genre": "Action"
+    },
+    {
+      "title": "Spider-Man 2" ,
+      "director": "Sam Raimi",
+      "year": 2004,
+      "genre": "Action"
+    },
+    {
+      "title": "The Conjuring",
+      "director": "James Wan",
+      "year": 2013,
+      "genre": "Horror"
+    },
+    {
+      "title": "Evil Dead Rise",
+      "director": "Lee Cronin",
+      "year": 2023,
+      "genre": "Horro"
+    },
+    {
+      "title": "Hereditary",
+      "director": "Ari Aster",
+      "year": 2018,
+      "genre": "Horror"
+    },
+    {
+      "title": "The Big Lebowski",
+      "director": "Ethan Coen, Joel Coen",
+      "year": 1998,
+      "genre": "Comedy"
+    }
+  ]
+}
