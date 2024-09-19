@@ -22,6 +22,53 @@ app.get('/documentation', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'documentation.html'));
 });
 
+//This is where the API routes start
+
+// Route for getting all movies
+app.get('/movies', (req, res) => {
+  res.send('Successful GET request returning a list of all movies');
+});
+
+// Route for getting a single movie by title
+app.get('/movies/:title', (req, res) => {
+  res.send(`Successful GET request returning data about the movie titled "${req.params.title}"`);
+});
+
+// Route for getting data about a genre by name
+app.get('/genres/:name', (req, res) => {
+  res.send(`Successful GET request returning data about the genre named "${req.params.name}"`);
+});
+
+// Route for getting data about a director by name
+app.get('/directors/:name', (req, res) => {
+  res.send(`Successful GET request returning data about the director named "${req.params.name}"`);
+});
+
+// Route for registering a new user
+app.post('/users', (req, res) => {
+  res.send('Successful POST request to register a new user');
+});
+
+// Route for updating user info (username)
+app.put('/users/:username', (req, res) => {
+  res.send(`Successful PUT request to update user info for username "${req.params.username}"`);
+});
+
+// Route for adding a movie to a user’s list of favorites
+app.post('/users/:username/movies/:movieId', (req, res) => {
+  res.send(`Successful POST request to add movie with ID "${req.params.movieId}" to the favorites list of user "${req.params.username}"`);
+});
+
+// Route for removing a movie from a user’s list of favorites
+app.delete('/users/:username/movies/:movieId', (req, res) => {
+  res.send(`Successful DELETE request to remove movie with ID "${req.params.movieId}" from the favorites list of user "${req.params.username}"`);
+});
+
+// Route for deregistering a user
+app.delete('/users/:username', (req, res) => {
+  res.send(`Successful DELETE request to deregister user with username "${req.params.username}"`);
+});
+
 app.use((err, req, res, next) => {
   console.error(err.stack);
   res.status(500).send('Something broke!');

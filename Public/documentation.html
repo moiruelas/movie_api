@@ -10,6 +10,70 @@
   <h3>Welcome to my Movie API. Below is the documentation for the API.</h3>
   <p>hello click here and stuff this does that this and that there and this and that, thank you.</p>
 
-  
+  <h2>API Endpoints</h2>
+
+  <h3>1. Get all movies</h3>
+<ul>
+  <li><strong>URL:</strong> /movies</li>
+  <li><strong>Method:</strong> GET</li>
+  <li><strong>Description:</strong> Returns a list of all movies.</li>
+</ul>
+
+<h3>2. Get a single movie by title</h3>
+<ul>
+  <li><strong>URL:</strong> /movies/:title</li>
+  <li><strong>Method:</strong> GET</li>
+  <li><strong>Description:</strong> Returns data about a single movie by title (description, genre, director, image URL).</li>
+</ul>
+
+<h3>3. Get data about a genre by name</h3>
+<ul>
+  <li><strong>URL:</strong> /genres/:name</li>
+  <li><strong>Method:</strong> GET</li>
+  <li><strong>Description:</strong> Returns data about a genre (description) by name.</li>
+</ul>
+
+<h3>4. Get data about a director by name</h3>
+<ul>
+  <li><strong>URL:</strong> /directors/:name</li>
+  <li><strong>Method:</strong> GET</li>
+  <li><strong>Description:</strong> Returns data about a director (bio, birth year, death year) by name.</li>
+</ul>
+
+<h3>5. Register a new user</h3>
+<ul>
+  <li><strong>URL:</strong> /users</li>
+  <li><strong>Method:</strong> POST</li>
+  <li><strong>Description:</strong> Registers a new user.</li>
+</ul>
+
+<h3>6. Update user info (username)</h3>
+<ul>
+  <li><strong>URL:</strong> /users/:username</li>
+  <li><strong>Method:</strong> PUT</li>
+  <li><strong>Description:</strong> Updates user info (username).</li>
+</ul>
+
+<h3>7. Add a movie to a user’s list of favorites</h3>
+<ul>
+  <li><strong>URL:</strong> /users/:username/movies/:movieId</li>
+  <li><strong>Method:</strong> POST</li>
+  <li><strong>Description:</strong> Adds a movie to the user’s list of favorites.</li>
+</ul>
+
+<h3>8. Remove a movie from a user’s list of favorites</h3>
+<ul>
+  <li><strong>URL:</strong> /users/:username/movies/:movieId</li>
+  <li><strong>Method:</strong> DELETE</li>
+  <li><strong>Description:</strong> Removes a movie from the user’s list of favorites.</li>
+</ul>
+
+<h3>9. Deregister a user</h3>
+<ul>
+  <li><strong>URL:</strong> /users/:username</li>
+  <li><strong>Method:</strong> DELETE</li>
+  <li><strong>Description:</strong> Deregisters a user.</li>
+</ul>
+
 </body>
 </html>
